@@ -1,3 +1,5 @@
+# TODO
+# - program crashed quite instanty
 Summary:	dumps packets that are sent or received over a network interface
 Name:		mysqlsniffer
 Version:	1.1
