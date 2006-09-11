@@ -1,14 +1,12 @@
-# TODO
-# - program crashed quite instanty
 Summary:	Dumps packets that are sent or received over a network interface
 Summary(pl):	Zrzucanie pakietów wysy³anych lub otrzymywanych po interfejsie sieciowym
 Name:		mysqlsniffer
-Version:	1.1
+Version:	1.2
 Release:	1
 License:	GPL
 Group:		Applications/Networking
 Source0:	http://hackmysql.com/code/%{name}.tgz
-# Source0-md5:	3db83ce9f8710d4226a373fff39a238f
+# Source0-md5:	816575bfd06179192468a15dd3d26cdb
 URL:		http://hackmysql.com/mysqlsniffer
 BuildRequires:	libpcap-devel >= 2:0.8.3-6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -27,7 +25,8 @@ ruch MySQL-a w sieci TCP/IP.
 %setup -q -c
 
 %build
-%{__cc} %{rpmcflags} %{rpmldflags} -Wall -lpcap -o mysqlsniffer mysqlsniffer.c
+%{__cc} %{rpmcflags} -Wall -c *.c
+%{__cc} %{rpmcflags} %{rpmldflags} -Wall -lpcap -o mysqlsniffer *.o
 
 %install
 rm -rf $RPM_BUILD_ROOT
