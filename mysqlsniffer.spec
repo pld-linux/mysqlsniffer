@@ -1,5 +1,5 @@
 Summary:	Dumps packets that are sent or received over a network interface
-Summary(pl):	Zrzucanie pakietÛw wysy≥anych lub otrzymywanych po interfejsie sieciowym
+Summary(pl.UTF-8):   Zrzucanie pakiet√≥w wysy≈Çanych lub otrzymywanych po interfejsie sieciowym
 Name:		mysqlsniffer
 Version:	1.2
 Release:	1
@@ -16,9 +16,9 @@ mysqlsniffer is a tcpdump clone for watching MySQL traffic on a
 network. Coded in C using the pcap library, mysqlsniffer captures and
 interprets MySQL traffic on a TCP/IP network.
 
-%description -l pl
-mysqlsniffer to klon tcpdumpa do podgl±dania ruchu MySQL-a w sieci.
-Jest napisany w C z uøyciem biblioteki pcap. Wy≥apuje i interpretuje
+%description -l pl.UTF-8
+mysqlsniffer to klon tcpdumpa do podglƒÖdania ruchu MySQL-a w sieci.
+Jest napisany w C z u≈ºyciem biblioteki pcap. Wy≈Çapuje i interpretuje
 ruch MySQL-a w sieci TCP/IP.
 
 %prep
