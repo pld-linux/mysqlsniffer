@@ -2,7 +2,7 @@ Summary:	Dumps packets that are sent or received over a network interface
 Summary(pl.UTF-8):	Zrzucanie pakietów wysyłanych lub otrzymywanych po interfejsie sieciowym
 Name:		mysqlsniffer
 Version:	1.2
-Release:	3
+Release:	4
 License:	GPL
 Group:		Applications/Networking
 Source0:	http://hackmysql.com/code/%{name}.tgz
