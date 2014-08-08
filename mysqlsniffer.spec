@@ -2,7 +2,7 @@ Summary:	Dumps packets that are sent or received over a network interface
 Summary(pl.UTF-8):	Zrzucanie pakietów wysyłanych lub otrzymywanych po interfejsie sieciowym
 Name:		mysqlsniffer
 Version:	1.2
-Release:	4
+Release:	5
 License:	GPL
 Group:		Applications/Networking
 Source0:	http://hackmysql.com/code/%{name}.tgz
@@ -25,7 +25,7 @@ ruch MySQL-a w sieci TCP/IP.
 %setup -q -c
 
 %build
-%{__cc} %{rpmcflags} -Wall -c *.c
+%{__cc} %{rpmcflags} -Wall -fPIC -c *.c
 %{__cc} %{rpmcflags} %{rpmldflags} -Wall -o mysqlsniffer *.o -lpcap
 
 %install
